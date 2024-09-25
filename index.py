@@ -2,7 +2,7 @@ import requests
 import boto3
 import time
 def handler(event, context):
-    city = "London"
+    city = "Milpitas"
     data = requests.get(f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid=ec1e9852707e1ebb802ad2b06b2ad5dc")
     if data.status_code == 200:
         data = data.json()
